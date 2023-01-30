@@ -17,7 +17,6 @@
   - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
@@ -78,17 +77,14 @@
 
 ### Key Features <a name="key-features"></a>
 
-- Make Budget
-- Control spending
-- know amount of money spent
+- Learn how things work under the hood with rails and react apps
+- generate random greetings
 
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> - [Live Demo Link](https://rails-budget-production.up.railway.app/)
-
-> - ##### Video Presentation <div style="position: relative; padding-bottom: 56.09375%; height: 0;"><iframe src="https://www.loom.com/embed/c9b47e7752204cfda2ce45c932d68128" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+> - [Live Demo Link]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -105,13 +101,13 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 ```
-  git clone https://github.com/killy10o10/rails-budget.git
+  git clone https://github.com/killy10o10/hello-react-rails.git
 ```
 
 change directory to cloned folder
 
 ```
-  cd rails-budget
+  cd hello-react-rails
 ```
 
 ### Install
@@ -119,7 +115,9 @@ change directory to cloned folder
 Install project dependecies with:
 
 ```
+  gem install bundler
   bundle install
+  npm install
 ```
 
 -
@@ -129,12 +127,14 @@ Install project dependecies with:
 To run the project, execute the following command:
 
 ```
-  rails server
+  rails db:prepare
+  rails db:seed
+  ./bin/dev
 ```
 
-- After running `rails server`, open your browser and enter this address http://localhost:3000/
+- After running `./bin/dev`, use the app on `http://localhost:3000/` in the browser!
 
-- Congratulations! your're running **_Rails Budget_**
+- Congratulations! your're running **_hello-react-rails_**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -147,18 +147,6 @@ To run the project, execute the following command:
 - GitHub: [@killy10o10](https://github.com/killy10o10)
 - Twitter: [@Quami_Killy](https://twitter.com/Quami_Killy)
 - LinkedIn: [@Kingsley Okine](https://www.linkedin.com/in/kingsley-okine/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FUTURE FEATURES -->
-
-## 🔭 Future Features <a name="future-features"></a>
-
-> These features will be added in future updates. ⬇️⬇️
-
-- [ ] **Sign up and log in pages**
-- [ ] **Transaction Page**
-- [ ] **Category Page**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -183,8 +171,6 @@ If you like👍🏽 this project, give the repository a star ⭐
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank the Microverse community
-
-Specails thanks to [Gregoire Vella on Behance](https://www.behance.net/gregoirevella) on Behance for designing the template
 
 <!-- LICENSE -->
 
