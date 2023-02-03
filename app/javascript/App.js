@@ -1,13 +1,21 @@
 import React from 'react';
-// import { BrowserRouter, Route, Routes } from 'react-router-dom';
-// import { Provider } from 'react-redux';
-// import store from '../store/createStore'
-// import Greeting from './Greeting';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import { store } from './redux/store';
+import Message from './components/message';
 
 const App = () => {
     return (
-      <h1>Hello react Rails</h1>
+      <Provider store={store}>
+        <>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Message />} />
+          </Routes>
+        </BrowserRouter>
+        </>
+      </Provider>
     );
-}
+};
 
 export default App;
